@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Dolan Banyumas</string>
+    <string name="description">deskripsi</string>
+    <string name="name">nama</string>
+
+    <string-array name="lat_hotel">
+        <item>-7.4178226</item>
+        <item>-7.4218325</item>
+        <item>-7.4237763</item>
+        <item>-7.4311199</item>
+        <item>-7.421993</item>
+    </string-array>
+
+    <string-array name="long_hotel">
+        <item>109.2257945</item>
+        <item>109.222648</item>
+        <item>109.2176803</item>
+        <item>109.2162634</item>
+        <item>109.220352</item>
+    </string-array>
+
+    <string-array name="lat_restorna">
+
+    </string-array>
+
+    <string-array name="long_restorn">
+
+    </string-array>
+
+    <string-array name="lat_wa">
+
+    </string-array>
+
+    <string-array name="long_wa">
+
+    </string-array>
+
+    <string-array name="lat_wb">
+
+    </string-array>
+
+    <string-array name="long_wb">
+
+    </string-array>
+
+    <string-array name="lat_museum">
+
+    </string-array>
+
+    <string-array name="long_museum">
+
+    </string-array>
+
+    <string name="title_activity_practice3_maps">Maps</string>
+    <string name="title_activity_maps_hotel">MapsHotel</string>
+    <string name="title_activity_maps_resto">Restoran</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+</resources>

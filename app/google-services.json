@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "33904433905",
+    "project_id": "banyumas-00",
+    "storage_bucket": "banyumas-00.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:33904433905:android:17f170a9bc02a86e16e750",
+        "android_client_info": {
+          "package_name": "com.dinporabudpar.wisatabanyumas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "33904433905-80a0vkllms7t72b067rf9lmbo4go4msn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuQPoGs16ZBzegXGQkcovCkXByxUJxBSY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "33904433905-80a0vkllms7t72b067rf9lmbo4go4msn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
