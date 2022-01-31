@@ -25,7 +25,6 @@ class AdapterHotel(
             .inflate(R.layout.item_cardview, parent, false))
     }
 
-
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val dataModel = dataList.get(position)
         holder.bind(dataList[position])
@@ -57,8 +56,12 @@ class AdapterHotel(
 
                 btnMaps.setOnClickListener {
                     val moveWithObjectIntent = Intent(context,MapsHotel::class.java)
+                    moveWithObjectIntent.putExtra("ininama", myData.name)
+                    moveWithObjectIntent.putExtra("inilat", myData.lat)
+                    moveWithObjectIntent.putExtra("inilong", myData.lng)
                     context.startActivity(moveWithObjectIntent)
                 }
+
             }
         }
     }

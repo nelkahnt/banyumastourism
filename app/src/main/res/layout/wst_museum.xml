@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HotelActivity">
+    tools:context=".wstMuseum">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_hotel"
+        android:id="@+id/rv_wisata"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="16dp"

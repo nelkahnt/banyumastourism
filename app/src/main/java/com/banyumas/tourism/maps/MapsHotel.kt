@@ -14,29 +14,33 @@ import com.banyumas.tourism.model.MyData as MyData
 class MapsHotel : AppCompatActivity(), OnMapReadyCallback {
 
     private lateinit var mMap: GoogleMap
-    private var myData: MyData = MyData()
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.maps_hotel)
+        setContentView(R.layout.maps)
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         val mapFragment = supportFragmentManager
             .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
 
-        supportActionBar?.title = myData.name.toString()
+        var title = intent.getStringExtra("ininama")
+        supportActionBar?.title = title
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
     }
 
     override fun onMapReady(googleMap: GoogleMap) {
+
         mMap = googleMap
 
-        var latitude = myData.lat
-        var longitude = myData.lng
+        var title = intent.getStringExtra("ininama")
+        var latitude = intent.getDoubleExtra("inilat",0.0)
+        var longitude = intent.getDoubleExtra("inilong",0.0)
 
-        val location = LatLng (latitude!!, longitude!!)
+        val location = LatLng (latitude, longitude)
 
-        mMap.addMarker(MarkerOptions().position(location).title(myData.name.toString()))
+        mMap.addMarker(MarkerOptions().position(location).title(title))
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(location, 16.0f))
     }
 
