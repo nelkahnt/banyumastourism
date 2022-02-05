@@ -58,7 +58,7 @@ class AdapterHotel(
                     val moveWithObjectIntent = Intent(context,MapsHotel::class.java)
                     moveWithObjectIntent.putExtra("ininama", myData.name)
                     moveWithObjectIntent.putExtra("inilat", myData.lat)
-                    moveWithObjectIntent.putExtra("inilong", myData.lng)
+                    moveWithObjectIntent.putExtra("inilong", myData.lang)
                     context.startActivity(moveWithObjectIntent)
                 }
 
