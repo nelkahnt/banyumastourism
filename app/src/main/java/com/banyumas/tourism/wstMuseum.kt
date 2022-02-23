@@ -20,7 +20,7 @@ class wstMuseum : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.wst_museum)
-        setTitle("Wisata Museum")
+        setTitle("Wisata Sejarah")
 
         recyclerView = findViewById(R.id.rv_wisata)
         myAdapter = AdapterHotel(arrayList, this)

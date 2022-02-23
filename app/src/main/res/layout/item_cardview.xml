@@ -16,6 +16,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/stroke"
         android:elevation="0dp">
 
         <ImageView
@@ -25,37 +26,93 @@
             android:layout_marginBottom="0dp"
             android:scaleType="centerCrop"
             tools:src="@color/colorAccent" />
-        <TextView
-            android:id="@+id/lat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:visibility="invisible"/>
-        <TextView
-            android:id="@+id/lang"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/btnLoc"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/shape_circle" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="26dp"
+            android:src="@drawable/ic_baseline_location_on_24" />
+
         <TextView
             android:id="@+id/cv_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/cv_photo"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="-35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-39dp"
             android:layout_marginRight="16dp"
-            android:layout_marginBottom="8dp"
             android:fontFamily="@font/didact_gothic"
             android:maxLines="2"
             android:textColor="#FFFFFF"
-            android:textSize="20sp"
+            android:textSize="23sp"
             android:textStyle="bold"
             tools:text="heroes_name" />
+
+        <LinearLayout
+            android:id="@+id/Linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cv_photo"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="14dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="21dp"
+                    android:src="@drawable/ic_baseline_local_parking_24"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="Mobil dan Motor"
+                    android:textSize="15dp"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/didact_gothic"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="21dp"
+                    android:src="@drawable/ic_baseline_theaters_24"/>
+                <TextView
+                    android:id="@+id/cv_harga"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=": Mobil dan Motor"
+                    android:textSize="15dp"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/didact_gothic"/>
+            </LinearLayout>
+
+        </LinearLayout>
 
         <TextView
             android:id="@+id/cv_descr"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/cv_photo"
+            android:layout_below="@+id/Linear"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
@@ -65,18 +122,6 @@
             android:maxLines="15"
             android:text="asas"
             android:textSize="14dp" />
-
-        <Button
-            android:id="@+id/btnMaps"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_below="@+id/cv_descr"
-            android:background="@color/colorPrimary"
-            android:elevation="0sp"
-            android:fontFamily="@font/didact_gothic"
-            android:textColor="#fff"
-            android:textStyle="bold"
-            android:text="KLIK UNTUK MELIHAT MAP"/>
 
     </RelativeLayout>
 

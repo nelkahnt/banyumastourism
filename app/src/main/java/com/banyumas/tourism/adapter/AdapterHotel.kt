@@ -29,6 +29,7 @@ class AdapterHotel(
         val dataModel = dataList.get(position)
         holder.bind(dataList[position])
         holder.titleTextView.text = dataModel.name
+        holder.titleTextView.text = dataModel.harga
         holder.titleTextView.text = dataModel.desc
     }
 
@@ -43,6 +44,7 @@ class AdapterHotel(
 
         init {
             titleTextView = itemLayoutView.findViewById(R.id.cv_name)
+            titleTextView = itemLayoutView.findViewById(R.id.cv_harga)
             titleTextView = itemLayoutView.findViewById(R.id.cv_descr)
         }
 
@@ -52,9 +54,10 @@ class AdapterHotel(
                     .load(myData.photo)
                     .into(imgPhoto)
                 cv_name.text = myData.name
+                cv_harga.text = myData.harga
                 cv_descr.text = myData.desc
 
-                btnMaps.setOnClickListener {
+                btnLoc.setOnClickListener {
                     val moveWithObjectIntent = Intent(context,MapsHotel::class.java)
                     moveWithObjectIntent.putExtra("ininama", myData.name)
                     moveWithObjectIntent.putExtra("inilat", myData.lat)
